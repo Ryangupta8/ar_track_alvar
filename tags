@@ -876,6 +876,7 @@ _Update	ar_track_alvar/src/MultiMarkerFiltered.cpp	/^double MultiMarkerFiltered:
 __Ransac_h__	ar_track_alvar/include/ar_track_alvar/Ransac.h	25;"	d
 __TRIFOCAL_TENSOR__	ar_track_alvar/include/ar_track_alvar/TrifocalTensor.h	25;"	d
 __UNSCENTED_KALMAN__	ar_track_alvar/include/ar_track_alvar/UnscentedKalman.h	25;"	d
+__init__	ar_track_alvar/scripts/tagpose_pub	/^    def __init__(self, wait=0.0):$/;"	m	class:ar_pose_manager
 _begin	ar_track_alvar/include/ar_track_alvar/Marker.h	/^    const_iterator_aligntype _begin;$/;"	m	class:alvar::MarkerIteratorImpl
 _camera	ar_track_alvar/include/ar_track_alvar/TrackerOrientation.h	/^	Camera				 *_camera;$/;"	m	class:alvar::TrackerOrientation
 _data	ar_track_alvar/include/ar_track_alvar/Marker.h	/^    void *_data;$/;"	m	class:alvar::MarkerIterator
@@ -1051,6 +1052,8 @@ arPoseMarkers_	ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp	/^ar_track_alv
 arPoseMarkers_	ar_track_alvar/nodes/IndividualMarkers.cpp	/^ar_track_alvar_msgs::AlvarMarkers arPoseMarkers_;$/;"	v
 arPoseMarkers_	ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp	/^ar_track_alvar_msgs::AlvarMarkers arPoseMarkers_;$/;"	v
 arPoseMarkers_	ar_track_alvar/nodes/TrainMarkerBundle.cpp	/^ar_track_alvar_msgs::AlvarMarkers arPoseMarkers_;$/;"	v
+ar_marker_Cb	ar_track_alvar/scripts/tagpose_pub	/^    def ar_marker_Cb(self, msg):$/;"	m	class:ar_pose_manager
+ar_pose_manager	ar_track_alvar/scripts/tagpose_pub	/^class ar_pose_manager(object):$/;"	c
 ar_track_alvar	ar_track_alvar/include/ar_track_alvar/filter/kinect_filtering.h	/^namespace ar_track_alvar$/;"	n
 ar_track_alvar	ar_track_alvar/include/ar_track_alvar/filter/medianFilter.h	/^namespace ar_track_alvar$/;"	n
 ar_track_alvar	ar_track_alvar/src/kinect_filtering.cpp	/^namespace ar_track_alvar$/;"	n	file:
@@ -1320,6 +1323,7 @@ get_y	ar_track_alvar/src/SampleOptimization.cpp	/^double get_y(double x, double 
 gl_mat	ar_track_alvar/include/ar_track_alvar/GlutViewer.h	/^	double gl_mat[16];$/;"	m	class:Drawable
 globalPose	ar_track_alvar/include/ar_track_alvar/MultiMarkerInitializer.h	/^		bool globalPose;$/;"	m	class:alvar::MultiMarkerInitializer::MarkerMeasurement
 glut_thread	ar_track_alvar/src/GlutViewer.cpp	/^static void *glut_thread(void *lpThreadParameter)$/;"	f	file:
+goal_manager	ar_track_alvar/scripts/tagpose_pub	/^    goal_manager = ar_pose_manager()$/;"	v
 gray	ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h	/^	IplImage *gray;$/;"	m	class:alvar::Labeling
 gray	ar_track_alvar/include/ar_track_alvar/TrackerFeatures.h	/^	IplImage *gray;$/;"	m	class:alvar::TrackerFeatures
 gray	ar_track_alvar/src/SampleMarkerlessDetector.cpp	/^cv::Mat gray;$/;"	v
@@ -1889,6 +1893,7 @@ start	ar_track_alvar/src/platform/capture_plugin_file/CapturePluginFile.cpp	/^bo
 start	ar_track_alvar/src/platform/capture_plugin_highgui/CapturePluginHighgui.cpp	/^bool CaptureHighgui::start()$/;"	f	class:alvar::plugins::CaptureHighgui
 start	ar_track_alvar/src/platform/capture_plugin_ptgrey/CapturePluginPtgrey.cpp	/^bool CapturePtgrey::start()$/;"	f	class:alvar::plugins::CapturePtgrey
 startThread	ar_track_alvar/src/Threads_win.cpp	/^static DWORD WINAPI startThread(void *parameters)$/;"	f	namespace:alvar
+starter	ar_track_alvar/scripts/tagpose_pub	/^    def starter(self,wait=0.0):$/;"	m	class:ar_pose_manager
 state	ar_track_alvar/include/ar_track_alvar/UnscentedKalman.h	/^    CvMat *state;$/;"	m	class:alvar::UnscentedKalman
 stateCovariance	ar_track_alvar/include/ar_track_alvar/UnscentedKalman.h	/^    CvMat *stateCovariance;$/;"	m	class:alvar::UnscentedKalman
 stateD	ar_track_alvar/include/ar_track_alvar/UnscentedKalman.h	/^    CvMat *stateD;$/;"	m	class:alvar::UnscentedKalman
